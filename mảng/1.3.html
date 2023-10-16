@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ar=[12,13,56,78,9,1,19,88,10,3];
+    let max =ar[0];
+    let t=0;
+    let tb;
+    for (let i = 0; i < ar.length; i++) {
+        if (max < ar[i]) {
+            max = ar[i]
+        }
+        t += ar[i]
+        tb = (t / ar.length)
+    }
+    document.write( t  +' '+  tb )
+</script>
+</body>
+</html>

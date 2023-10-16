@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script >
+    let ar = [12, 13, 56, 78, 9, 1, 19, 88, 10, 3];
+    // 12 13 78 9 1 19 88 10 3 0
+
+    let V = +prompt('nhập');
+    let check = false
+    for (let i = 0; i < ar.length;i++) {
+        if (V === ar[i]) {
+            check = true
+            ar.splice(i,1)
+            break
+        } else {
+            check = false
+        }
+    }
+    if(check){
+        document.write(ar)
+    }else{
+        document.write('V is not in the array')
+    }
+</script>
+</body>
+</html>
